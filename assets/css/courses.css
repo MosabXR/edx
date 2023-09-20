@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Mooli&family=PT+Sans+Narrow&family=Poppins:wght@200;400;500;600;800&family=Raleway&family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Inter;
+    background-color: #FFF;
+}
+
+header {
+    max-width: 100%;
+    background-color: #FFF;
+    box-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header nav .left-nav {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    grid-column: span 1;
+    padding-left: 20px;
+}
+
+header nav .left-nav img{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+header nav .left-nav ul li {
+    display: inline-block;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+header nav .left-nav ul li:first-of-type {
+    margin-left: 10px;
+}
+
+
+header nav .left-nav ul li:hover{
+    background-color: #00262b;
+}
+
+header nav .left-nav ul .selected {
+    border-bottom: 2px solid #00262b;
+}
+
+header nav .left-nav ul li a {
+    text-decoration: none;
+    color: #00262B;
+}
+
+header nav .right-nav {
+    display: grid;
+    justify-items: end;
+}
+
+header nav .right-nav ul li {
+    display: inline-block;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+header nav .right-nav ul li:hover {
+    background-color: #00262b;
+}
+
+header nav .right-nav ul li:last-child {
+    background-color: #e1dddb;
+}
+
+header nav .right-nav ul .selected {
+    border-bottom: 2px solid #00262b;
+}
+
+header nav .right-nav ul li a {
+    text-decoration: none;
+    color: #00262B;
+}
+
+main {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 13%;
+    gap: 20px;
+}
+
+main .main-left {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    grid-template-rows: auto;
+    gap:20px;
+}
+
+main .main-left h1 {
+    grid-column: 1fr;
+    color: #00262B;
+}
+
+.standard-button {
+    padding: 10px 20px;
+    color: #00262B;
+    background-color: #FFF;
+    border: 1px solid #eee;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reversed {
+    background-color: #00262B;
+    color: #FFF;
+}
+
+.icon-flex {
+    display: flex;
+    align-items: center;
+}
+
+.standard-button:hover {
+    background-color: #00262B;
+    color: #FFF;
+}
+
+main .main-left button {
+    grid-column: 1fr;
+    justify-self: end;
+}
+
+main .main-left .large-card {
+    max-width: 100%;
+    grid-column: span 2;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+}
+
+main .main-left .large-card img {
+    grid-column: span 1;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px 0 0 0;
+    height: 210px;
+}
+
+main .main-left .large-card .info-container {
+    grid-column: span 3;
+    padding: 30px 25px 25px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .main-left .large-card .info-container h2 {
+    grid-column: span 2;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main .main-left .large-card .info-container p {
+    grid-column: span 2;
+    color: #454545;
+    font-size: 14px;
+}
+
+main .main-left .large-card .info-container .holder {
+    grid-column: span 1;
+}
+
+main .main-left .large-card .info-container .button-container {
+    grid-column: span 2;
+    justify-self: end;
+    align-self: end;
+}
+
+main .main-left .large-card .card-extend {
+    grid-column: span 4;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 25px 60px;
+}
+
+main .main-left .large-card .card-extend h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+main .main-left .large-card .card-extend ul li {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+main .main-left .large-card .card-extend ul li a {
+    text-decoration: none;
+    color: #00688d;
+}
+
+main .main-left .large-card .card-footer {
+    grid-column: span 4;
+    background-color: #eff8fa;
+    align-self: start;
+    padding: 20px 30px;
+    border-radius: 0 0 6px 6px;
+}
+
+main .main-left .large-card .card-footer p {
+    font-size: 14px;
+    color: #454545;
+}
+
+main .main-right {
+    grid-column: span 1;
+    background: #f8f7f6;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 66px;
+    align-self: start;
+}
+
+main .main-right h2 {
+    font-size: 22px;
+    color: #00262B;
+}
+
+main .main-right .small-card {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+    padding: 20px;
+    border-radius: 6px;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+main .main-right .small-card .avatar {
+    max-width: 100%;
+    background-color: #FFF;
+    grid-column: span 1;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 4px 0px;
+    justify-self: start;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+main .main-right .small-card .avatar img {
+    max-width: 100%;
+}
+
+main .main-right .small-card h4 {
+    grid-column: span 2;
+    color: #00688d;
+    font-size: 18px;
+}
+
+main .main-right a {
+    color: #454545;
+    font-size: 18px;
+    text-decoration: none;
+    grid-column: span 1;
+    justify-self: center;
+    padding: 15px 30px;
+    background-color: transparent;
+}
+
+main .main-right a:hover {
+    background-color: #e1dddb;
+}
+
+footer {
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr;
+    padding: 16px 24px;
+}
+
+footer div {
+    padding: 16px;
+}
+
+footer .edx {
+    border-left: 1px solid #ddd;
+}
+
+footer .legal {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+footer .connect {
+    border-right: 1px solid #ddd;
+}
+
+footer div h5 {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+footer div:first-child img {
+    max-width: 150px;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #00688d;
+    line-height: 1.5;
+}
+
+footer div ul li a:hover {
+    color: #004972;
+}
+
+footer div:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer div .icons {
+    grid-column: span 1;
+}
+
+footer div .install {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer div svg {
+    color: #00688d;
+    max-width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer div p {
+    padding: 16px;
+    max-width:287px
+}
+
+/* Responsive */
+
+@media screen and (max-width:1400px) {
+    main {
+        padding: 20px 3%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        padding: 20px 40px;
+    }
+
+    main .main-left {
+        grid-column: span 3;
+    }
+
+    main .main-right {
+        grid-column: span 3;
+    }
+
+    main .main-right .small-card .avatar img {
+        max-width: 50%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+    }
+
+    footer .connect {
+        border: none;
+    }
+
+    footer .contact {
+        grid-column: 2 / 5 ;
+        border-left: 1px solid #ddd;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    header nav .left-nav {
+        padding: 0;
+    }
+
+    header nav .left-nav ul {
+        display: none;
+    }
+
+    header nav .right-nav {
+        display: none;
+    }
+
+    header nav{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    footer .contact {
+        grid-column: span 1;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    footer .edx {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+
+    footer .legal {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+
+    footer .contact {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+
+}
