@@ -43,6 +43,7 @@ header nav .left-nav ul {
 header nav .left-nav ul li {
     display: inline-block;
     height: 100%;
+    padding: 25px;
     cursor: pointer;
 }
 
@@ -59,7 +60,6 @@ header nav .left-nav input {
 
 header nav .right-nav {
     display: grid;
-    grid-column: span 1;
     justify-items: end;
     align-items: center;
 }
@@ -67,6 +67,7 @@ header nav .right-nav {
 header nav .right-nav ul li {
     display: inline-block;
     height: 100%;
+    padding: 25px;
     cursor: pointer;
 }
 
