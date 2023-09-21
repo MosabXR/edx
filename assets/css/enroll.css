@@ -7,5 +7,141 @@
 }
 
 body {
+    background-color: #fbfaf9;
     font-family: Inter;
 }
+
+ul,li {
+    list-style: none;
+}
+
+header {
+    background-color: #FFF;
+    box-shadow: 3.5px 3.5px 3.5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header nav .left-nav {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .left-nav img {
+    max-width: 50px;
+}
+
+header nav .left-nav ul {
+    
+}
+
+header nav .left-nav ul li {
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+}
+
+header nav .left-nav ul li:hover {
+    background-color: #00262b;
+    color: #FFF;
+}
+
+header nav .left-nav input {
+    padding:10px;
+    font-size: 14px;
+    min-width: 260px;
+}
+
+header nav .right-nav {
+    display: grid;
+    grid-column: span 1;
+    justify-items: end;
+    align-items: center;
+}
+
+header nav .right-nav ul li {
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+}
+
+header nav .right-nav ul li:hover {
+    background-color: #00262b;
+    color: #FFF;
+}
+
+main section.intro ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 22px 350px;
+}
+
+main section.intro ul {
+    grid-column: span 3;
+}
+
+main section.intro ul li.arrow {
+    width:7.5px;
+    height:7.5px;
+    padding: 0;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    rotate: 45deg;
+}
+
+main section.intro img {
+    grid-column: span 3;
+    justify-self: start;
+    align-self: center;
+    max-width: 100px;
+}
+
+main section .intro-container {
+    max-width: 100%;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main section .intro-container .info-container h1 {
+    font-size: 40px;
+    color: #00262b;
+    max-width: 675px;
+    padding: 10px;
+}
+
+main section .intro-container .info-container p {
+    font-size: 18px;
+    color: #00262b;
+    max-width: 675px;
+    padding: 10px;
+}
+
+main section .intro-container .avatar {
+    grid-column: span 1;
+    justify-self: end;
+    align-self: start;
+    width: 100%;
+}
+
+main section .intro-container img {
+    min-width: 100%;
+}
+
